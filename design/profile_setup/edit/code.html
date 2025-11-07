@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Edit Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "background-light": "#f0f3f5",
+                        "background-dark": "#101922",
+                        "azure-web": "#007FFF",
+                        "columbia-blue": "#B4D6F2",
+                        "antiflash-white": "#F0F3F5",
+                        "thistle": "#D1BACC",
+                        "wenge": "#5A5657"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .form-input {
+            @apply flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl border border-gray-300 bg-white dark:bg-background-dark dark:border-gray-700 h-14 p-4 text-base font-normal leading-normal text-wenge dark:text-antiflash-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-azure-web/50 focus:border-azure-web;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center justify-between bg-antiflash-white dark:bg-background-dark p-4 shadow-sm sticky top-0 z-10">
+<button class="text-wenge dark:text-antiflash-white flex size-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-wenge dark:text-antiflash-white text-xl font-bold leading-tight tracking-tight">Edit Profile</h1>
+<div class="flex size-10 items-center justify-center"></div>
+</div>
+<main class="flex-1 px-4 py-6 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-lg">
+<div class="flex w-full flex-col items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 ring-4 ring-white dark:ring-background-dark/50" data-alt="User's profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxwA_kXJM7yQQORq5X1D9kl-CtoiIsZQxNfJ8alQh7rHOPshBsoPnYoW_H6wk-kGaRP_J0OwPpkLgW5Ee3QAUkxuz1f4-ITNkWuhwk_hIt-fyvNP4mSZjDqgP-RtOTtj7hBIIqTG2o_r1qW2z4lkSlX9lpsKe56nQc7LSfMDPRVGoOIxgRfhy_cNsCtTEtQjtPUXYRaPbh_V5KNgQnkHQWqjIKki_S0tdSKYUpxtBO0XGox50r8K7tx7HdSO4Qv8sftSdpziPM0p4");'></div>
+<button class="absolute bottom-0 right-0 flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-azure-web text-white ring-2 ring-white dark:ring-background-dark/50">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+</div>
+</div>
+<div class="mt-8 space-y-5">
+<label class="flex flex-col">
+<p class="text-wenge dark:text-antiflash-white/80 text-sm font-medium leading-normal pb-2">Name</p>
+<input class="form-input" value="Alex Doe"/>
+</label>
+<label class="flex flex-col">
+<p class="text-wenge dark:text-antiflash-white/80 text-sm font-medium leading-normal pb-2">Username</p>
+<div class="relative flex items-center">
+<span class="absolute left-4 text-gray-400">@</span>
+<input class="form-input pl-8" value="alexdoe"/>
+</div>
+</label>
+<label class="flex flex-col">
+<p class="text-wenge dark:text-antiflash-white/80 text-sm font-medium leading-normal pb-2">Email</p>
+<input class="form-input" type="email" value="alex.doe@email.com"/>
+</label>
+<label class="flex flex-col">
+<p class="text-wenge dark:text-antiflash-white/80 text-sm font-medium leading-normal pb-2">Phone</p>
+<input class="form-input" type="tel" value="+1 (555) 123-4567"/>
+</label>
+<label class="flex flex-col">
+<p class="text-wenge dark:text-antiflash-white/80 text-sm font-medium leading-normal pb-2">Bio / Description</p>
+<textarea class="form-input min-h-28" placeholder="Tell us a little about yourself...">Loves splitting bills and keeping things fair. Big fan of tacos and travel.</textarea>
+</label>
+</div>
+<div class="mt-8">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-4 bg-azure-web text-white text-base font-bold leading-normal tracking-wide hover:bg-opacity-90 active:scale-95 transition-transform">
+<span class="truncate">Save</span>
+</button>
+</div>
+<div class="mt-8 mb-4">
+<button class="flex w-full items-center justify-between rounded-xl bg-white dark:bg-background-dark/50 p-4 text-left shadow-sm hover:bg-gray-50 dark:hover:bg-white/5">
+<span class="text-wenge dark:text-antiflash-white font-semibold">Account Settings</span>
+<span class="material-symbols-outlined text-wenge/70 dark:text-antiflash-white/70">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding Screen - Split Bills App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --columbia-blue: #c9f0ffff;
+          --azure-web: #eafffdff;
+          --antiflash-white: #efeff0ff;
+          --thistle: #d5cad6ff;
+          --wenge: #6b5e62ff;
+        }
+      }
+    </style>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--azure-web)] font-display text-[var(--wenge)]">
+<div class="relative flex h-screen w-full flex-col">
+<div class="flex items-center justify-between p-4 pb-2">
+<div></div> 
+<button class="text-[var(--wenge)] text-base font-bold leading-normal tracking-[0.015em] shrink-0">Skip</button>
+</div>
+<div class="flex flex-1 flex-col justify-between p-4">
+<div class="flex flex-col items-center">
+<div class="flex w-full max-w-sm grow items-center justify-center py-6">
+<img class="w-full h-auto" data-alt="An illustration of a person holding a large receipt next to a mobile phone, representing bill splitting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNRmMQDf7YtA-R9m2dhYeBwL6T9GZHpy6SXnGmsLFSF_LLjvRfx1ueGZEiWQfRMdOUz9xag8Nfhp5Jfn83GWBNxa1sVh_0fRMTKkYFTO-90HVpP9GlMep4C44HHK1E6yng46Z5Q7-95tP2aUR7ydYnxvc4JzIK3sem80xcsfDFr2jSABdUE_84XlvZN02StMaUph23vVBG7731INeXk4BZTY_cGTIXFlXQU722_SXXECpzCAgv56Tu-ohz9DbUgXfEWg2Jg1mOWJA"/>
+</div>
+<div class="text-center w-full max-w-md pt-6">
+<h1 class="text-[var(--wenge)] text-[32px] font-bold leading-tight tracking-tight">Split Bills Instantly</h1>
+<p class="text-[var(--wenge)]/80 text-base font-normal leading-normal pt-2">Scan receipts and split bills in seconds.</p>
+</div>
+</div>
+<div class="w-full pb-4">
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-[var(--wenge)]"></div>
+<div class="h-2 w-2 rounded-full bg-[var(--thistle)]"></div>
+<div class="h-2 w-2 rounded-full bg-[var(--thistle)]"></div>
+</div>
+<button class="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--wenge)] px-6 py-4 text-center text-base font-bold text-[var(--antiflash-white)] shadow-sm transition-colors hover:bg-[var(--wenge)]/90">
+<span>Next</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

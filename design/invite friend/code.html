@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Invite Friends</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4F46E5",
+                        "columbia-blue": "#C4D7F2",
+                        "azure-web": "#D9EFFF",
+                        "antiflash-white": "#F2F2F2",
+                        "thistle": "#D8BFD8",
+                        "wenge": "#5C5552",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white font-sans text-wenge">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden antialiased">
+<main class="flex flex-1 flex-col pb-24">
+<div class="sticky top-0 z-10 flex items-center justify-between border-b border-gray-200 bg-antiflash-white p-4">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-wenge">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-wenge">Invite Friends</h1>
+<div class="flex size-10 shrink-0 items-center justify-end"></div>
+</div>
+<div class="flex flex-1 flex-col gap-6 p-4">
+<div class="relative">
+<span class="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-wenge/50">search</span>
+<input class="w-full rounded-full border-gray-300 bg-white py-3 pl-10 pr-4 text-wenge placeholder-wenge/50 focus:border-primary focus:ring-primary" placeholder="Search contacts" type="text"/>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4">
+<h2 class="text-base font-semibold text-wenge">From Contacts</h2>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL-c-I3H212OuAmVcD57X4YFOOaeRVZWwe1lg-deTpGNHt8870VIO3sGJK2WqecZ7Z12sV5S1aiMZnXQZ6laYOyomtRBPWGFWIjBnCkvzZsG4XVKaJRyh88zTPa2SGVM9cg1RXcAqrCy7ojRGmlJcuNyg2FzD7LzkiGHi9KD7qzhdm1PX7_P9YiO7VBqYHFASripnR528ssBE3Olqhfqq2F9WiJsIU45UkQGigMZr7yEQLon00qRLVl1r7X4h_1bH6ieyoPEe9Ghg"/>
+<div>
+<p class="font-medium">Alex Johnson</p>
+<p class="text-sm text-wenge/60">+1 (555) 123-4567</p>
+</div>
+</div>
+<button class="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">Invite</button>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL-c-I3H212OuAmVcD57X4YFOOaeRVZWwe1lg-deTpGNHt8870VIO3sGJK2WqecZ7Z12sV5S1aiMZnXQZ6laYOyomtRBPWGFWIjBnCkvzZsG4XVKaJRyh88zTPa2SGVM9cg1RXcAqrCy7ojRGmlJcuNyg2FzD7LzkiGHi9KD7qzhdm1PX7_P9YiO7VBqYHFASripnR528ssBE3Olqhfqq2F9WiJsIU45UkQGigMZr7yEQLon00qRLVl1r7X4h_1bH6ieyoPEe9Ghg"/>
+<div>
+<p class="font-medium">Maria Garcia</p>
+<p class="text-sm text-wenge/60">+1 (555) 987-6543</p>
+</div>
+</div>
+<button class="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">Invite</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center gap-3 rounded-xl bg-white p-4 text-center">
+<div class="flex size-12 items-center justify-center rounded-full bg-azure-web">
+<span class="material-symbols-outlined text-primary">share</span>
+</div>
+<p class="font-semibold">Social</p>
+<p class="text-sm text-wenge/60">Share an invite link</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-xl bg-white p-4 text-center">
+<div class="flex size-12 items-center justify-center rounded-full bg-thistle">
+<span class="material-symbols-outlined text-wenge">edit</span>
+</div>
+<p class="font-semibold">Manual</p>
+<p class="text-sm text-wenge/60">Enter email or phone</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-white p-4">
+<h2 class="text-base font-semibold text-wenge">Invitation Status</h2>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL-c-I3H212OuAmVcD57X4YFOOaeRVZWwe1lg-deTpGNHt8870VIO3sGJK2WqecZ7Z12sV5S1aiMZnXQZ6laYOyomtRBPWGFWIjBnCkvzZsG4XVKaJRyh88zTPa2SGVM9cg1RXcAqrCy7ojRGmlJcuNyg2FzD7LzkiGHi9KD7qzhdm1PX7_P9YiO7VBqYHFASripnR528ssBE3Olqhfqq2F9WiJsIU45UkQGigMZr7yEQLon00qRLVl1r7X4h_1bH6ieyoPEe9Ghg"/>
+<div>
+<p class="font-medium">Jane Doe</p>
+<p class="text-sm text-wenge/60">jane.doe@example.com</p>
+</div>
+</div>
+<span class="rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-wenge/70">Pending</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-full bg-columbia-blue text-wenge">
+<span class="font-bold">SS</span>
+</div>
+<div>
+<p class="font-medium">Sam Smith</p>
+<p class="text-sm text-wenge/60">+1 (555) 222-3333</p>
+</div>
+</div>
+<span class="rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700">Joined</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-20 bg-antiflash-white p-4 pt-2">
+<button class="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/30">
+            Send Invites
+        </button>
+</div>
+</div>
+
+</body></html>

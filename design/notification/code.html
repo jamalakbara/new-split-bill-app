@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notifications Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4121F3",
+                        "columbia-blue": "#C9DAF5",
+                        "azure-web": "#E4F0FE",
+                        "antiflash-white": "#F1F5F9",
+                        "thistle": "#D8BFD8",
+                        "wenge": "#5C5C5C"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white dark:bg-wenge font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden antialiased">
+<main class="flex-1 flex flex-col">
+<div class="flex items-center bg-antiflash-white dark:bg-wenge p-4 pb-3 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/50">
+<span class="material-symbols-outlined text-wenge dark:text-antiflash-white">arrow_back_ios_new</span>
+</button>
+</div>
+<div class="flex-1 text-center"></div>
+<div class="flex w-12 items-center justify-end"></div>
+</div>
+<div class="px-6 flex justify-between items-center mb-4">
+<h1 class="text-3xl font-bold text-wenge dark:text-antiflash-white">Notifications</h1>
+<button class="text-primary text-sm font-semibold">Mark all read</button>
+</div>
+<div class="px-6 mb-6">
+<div class="flex space-x-2">
+<button class="flex-1 py-2 px-4 rounded-full bg-primary text-white text-sm font-semibold">All</button>
+<button class="flex-1 py-2 px-4 rounded-full bg-azure-web dark:bg-wenge/50 text-wenge dark:text-antiflash-white text-sm font-semibold">Unread</button>
+<button class="flex-1 py-2 px-4 rounded-full bg-azure-web dark:bg-wenge/50 text-wenge dark:text-antiflash-white text-sm font-semibold">Payments</button>
+<button class="flex-1 py-2 px-4 rounded-full bg-azure-web dark:bg-wenge/50 text-wenge dark:text-antiflash-white text-sm font-semibold">Bills</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 px-4">
+<div class="flex gap-4 bg-white dark:bg-wenge/60 rounded-lg p-3 items-center">
+<div class="flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+</div>
+<div class="flex-1">
+<p class="text-wenge dark:text-antiflash-white text-base font-medium">New bill added to 'Weekend Trip'</p>
+<p class="text-wenge/70 dark:text-antiflash-white/70 text-sm">John added "Groceries" for $55.00</p>
+</div>
+<div class="shrink-0 text-right self-start">
+<p class="text-wenge/50 dark:text-antiflash-white/50 text-xs">5m ago</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-wenge/60 rounded-lg p-3 items-center">
+<div class="flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<div class="flex-1">
+<p class="text-wenge dark:text-antiflash-white text-base font-medium">Payment received</p>
+<p class="text-wenge/70 dark:text-antiflash-white/70 text-sm">Sarah paid you $12.00</p>
+</div>
+<div class="shrink-0 text-right self-start">
+<p class="text-wenge/50 dark:text-antiflash-white/50 text-xs">1h ago</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-wenge/60 rounded-lg p-3 items-center relative">
+<div class="absolute top-3 right-3 w-2 h-2 rounded-full bg-primary"></div>
+<div class="flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary">person_add</span>
+</div>
+<div class="flex-1">
+<p class="text-wenge dark:text-antiflash-white text-base font-medium">New member in 'Apartment'</p>
+<p class="text-wenge/70 dark:text-antiflash-white/70 text-sm">You added Alex to the group</p>
+</div>
+<div class="shrink-0 text-right self-start">
+<p class="text-wenge/50 dark:text-antiflash-white/50 text-xs">Yesterday</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-wenge/60 rounded-lg p-3 items-center">
+<div class="flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-primary">task_alt</span>
+</div>
+<div class="flex-1">
+<p class="text-wenge dark:text-antiflash-white text-base font-medium">'Dinner Club' is settled up</p>
+<p class="text-wenge/70 dark:text-antiflash-white/70 text-sm">All expenses are paid</p>
+</div>
+<div class="shrink-0 text-right self-start">
+<p class="text-wenge/50 dark:text-antiflash-white/50 text-xs">2d ago</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-center p-8 mt-6">
+<div class="flex items-center justify-center rounded-full bg-columbia-blue dark:bg-wenge/50 size-24 mb-6">
+<span class="material-symbols-outlined text-5xl text-primary dark:text-antiflash-white">notifications_off</span>
+</div>
+<h3 class="text-xl font-bold text-wenge dark:text-antiflash-white">No unread notifications</h3>
+<p class="text-wenge/70 dark:text-antiflash-white/70 mt-2 max-w-xs">You're all caught up! We'll let you know when there's something new.</p>
+</div>
+</main>
+</div>
+
+</body></html>

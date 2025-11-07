@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Friend Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#6A5AE0",
+            "columbia-blue": "#BFD7ED",
+            "azure-web": "#60A5FA",
+            "antiflash-white": "#F1F4F8",
+            "thistle": "#D4B2D8",
+            "wenge": "#5D5C61",
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            "4xl": "2rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white dark:bg-wenge font-sans text-wenge dark:text-antiflash-white">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-lg flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 flex h-24 items-center justify-between bg-antiflash-white dark:bg-wenge p-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</div>
+<h1 class="text-xl font-bold">Alex Chen</h1>
+<div class="w-12"></div>
+</header>
+<main class="flex flex-1 flex-col p-4 pt-2">
+<section class="flex w-full flex-col items-center gap-4 rounded-4xl bg-white dark:bg-gray-800 p-6 shadow-sm">
+<div class="flex flex-col items-center gap-4">
+<div class="aspect-square w-24 rounded-full bg-cover bg-center bg-no-repeat" data-alt="Profile picture of Alex Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAU0ZhTWI-XHig2qiCOi_D42AOnLXZwPyXt0y3z6lEwRpq0tDVI5JrwG6_HKNq8c8leJ6ax_pWd8E9HXYnTwEg88kPdDMu6r7EwHruZeoIofG2ywfvJCLCU6DLYu9x-DULXiPemJwfurh8WbvEzTkvK0Xi-HoGsn8gB6f7PMOvX30wfBpnBTcSTY_bE_cYY1sDHdvd3xNxvw_cbaoS8S07bCPMGuy9lyO8CdI0969kS_wIPa_ScrKzl8uI7VN7bwcEbRJEA9xGu_c");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-xl font-bold leading-tight tracking-[-0.015em] text-wenge dark:text-antiflash-white">Alex Chen</p>
+<p class="text-base font-normal leading-normal text-slate-500 dark:text-slate-400">@alexchen</p>
+</div>
+</div>
+<div class="mt-2 flex items-center justify-center rounded-full bg-columbia-blue/30 px-3 py-1">
+<p class="text-sm font-medium text-azure-web dark:text-azure-web/80">Friends since Mar 2024</p>
+</div>
+<button class="mt-4 flex h-12 w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary text-base font-bold leading-normal tracking-[0.015em] text-white shadow-lg shadow-primary/30">
+<span class="truncate">Send Message</span>
+</button>
+</section>
+<section class="mt-6 flex flex-wrap gap-3">
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col items-center gap-1 rounded-2xl bg-white dark:bg-gray-800 p-4 text-center shadow-sm">
+<p class="text-2xl font-bold leading-tight tracking-tight text-wenge dark:text-antiflash-white">12</p>
+<p class="text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Bills Together</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col items-center gap-1 rounded-2xl bg-white dark:bg-gray-800 p-4 text-center shadow-sm">
+<p class="text-2xl font-bold leading-tight tracking-tight text-wenge dark:text-antiflash-white">$256.50</p>
+<p class="text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Total Split</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col items-center gap-1 rounded-2xl bg-white dark:bg-gray-800 p-4 text-center shadow-sm">
+<p class="text-2xl font-bold leading-tight tracking-tight text-wenge dark:text-antiflash-white">Yesterday</p>
+<p class="text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Last Activity</p>
+</div>
+</section>
+<section class="mt-6 flex flex-col gap-2 rounded-4xl bg-wenge dark:bg-gray-900 p-5 text-antiflash-white shadow-xl shadow-wenge/30">
+<p class="text-base font-medium opacity-80">You owe Alex</p>
+<p class="text-4xl font-bold leading-tight tracking-tighter">$15.50</p>
+</section>
+<h2 class="pb-3 pt-8 text-xl font-bold leading-tight tracking-[-0.015em] text-wenge dark:text-antiflash-white">Recent Bills Together</h2>
+<div class="flex flex-col gap-3">
+<div class="flex min-h-[72px] cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white dark:bg-gray-800 p-3 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-antiflash-white dark:bg-gray-700 text-wenge dark:text-antiflash-white">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="line-clamp-1 text-base font-medium leading-normal text-wenge dark:text-antiflash-white">Dinner at The Cafe</p>
+<p class="line-clamp-2 text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Mar 15, 2024</p>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-base font-medium leading-normal text-wenge dark:text-antiflash-white">$45.00</p>
+</div>
+</div>
+<div class="flex min-h-[72px] cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white dark:bg-gray-800 p-3 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-antiflash-white dark:bg-gray-700 text-wenge dark:text-antiflash-white">
+<span class="material-symbols-outlined">movie</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="line-clamp-1 text-base font-medium leading-normal text-wenge dark:text-antiflash-white">Movie Tickets</p>
+<p class="line-clamp-2 text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Mar 12, 2024</p>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-base font-medium leading-normal text-wenge dark:text-antiflash-white">$28.00</p>
+</div>
+</div>
+<div class="flex min-h-[72px] cursor-pointer items-center justify-between gap-4 rounded-2xl bg-white dark:bg-gray-800 p-3 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-antiflash-white dark:bg-gray-700 text-wenge dark:text-antiflash-white">
+<span class="material-symbols-outlined">local_grocery_store</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="line-clamp-1 text-base font-medium leading-normal text-wenge dark:text-antiflash-white">Groceries</p>
+<p class="line-clamp-2 text-sm font-normal leading-normal text-slate-500 dark:text-slate-400">Mar 10, 2024</p>
+</div>
+</div>
+<div class="shrink-0">
+<p class="text-base font-medium leading-normal text-wenge dark:text-antiflash-white">$72.30</p>
+</div>
+</div>
+</div>
+<div class="mt-8 flex flex-col gap-3 pb-4">
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-primary text-base font-bold text-white">
+<span class="material-symbols-outlined">send_money</span>
+<span class="truncate">Request / Send Money</span>
+</button>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-white text-base font-bold">
+<span class="material-symbols-outlined">note_add</span>
+<span class="truncate">Create Bill Together</span>
+</button>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent text-base font-bold text-red-500">
+<span class="material-symbols-outlined">person_remove</span>
+<span class="truncate">Remove Friend</span>
+</button>
+</div>
+</main>
+</div>
+
+</body></html>

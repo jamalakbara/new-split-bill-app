@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Review Bill</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "columbia-blue": "#D1E6F9",
+                        "azure-web": "#E1F2FE",
+                        "antiflash-white": "#F0F3F5",
+                        "thistle": "#D3B9CB",
+                        "wenge": "#5E5768",
+                        "background-light": "#F0F3F5",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-wenge">
+<div class="relative flex flex-col min-h-screen w-full overflow-x-hidden">
+<header class="sticky top-0 z-20 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 p-4 backdrop-blur-sm">
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-columbia-blue dark:bg-wenge/20">
+<span class="material-symbols-outlined text-lg text-wenge">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold">Review Bill</h1>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-wenge/20">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+</header>
+<main class="flex-grow px-4 pb-40">
+<section class="mt-4">
+<div class="flex items-center gap-4 rounded-2xl bg-white dark:bg-wenge/20 p-4">
+<div class="h-14 w-14 shrink-0 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="The Grand Bistro restaurant logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXd3eQwfTpQ9RCtIqjbETYbkf1HoyTSMIjX8kjFul0njtsb8HsE0u5DpHh38RiPk5vRvoodQreezHbhJE7TL4wiVinwDXiXeLBMsVTOK1gl78OUwxDjAN_ZI8_n9ejs4itxNWB150paMuMkB4fISOnSO2vdvDTGMl3uuNp4UBYcWOVFUqsZLdsOPBTWz77gOdXGVGFtEJZQBQ3AQYmy9CSKN-b1VT19HO2wleRMgJ94poKudy8VDTi-VXi2v1RYAppRuOet-art38");'></div>
+<div class="flex-grow">
+<p class="font-bold">The Grand Bistro</p>
+<p class="text-sm text-wenge/70">May 20, 2024</p>
+</div>
+<p class="shrink-0 text-sm font-medium">Dinner</p>
+</div>
+</section>
+<section class="mt-6 text-center">
+<p class="text-sm text-wenge/70">Total Amount</p>
+<h2 class="text-5xl font-extrabold tracking-tight">$124.50</h2>
+</section>
+<section class="mt-6">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-bold">Items</h3>
+<button class="flex items-center gap-1.5 rounded-full bg-azure-web px-3 py-1.5 text-xs font-semibold text-wenge">
+<span class="material-symbols-outlined text-base">add</span>
+                    Add
+                </button>
+</div>
+<div class="mt-2 flex flex-col gap-3 rounded-2xl bg-white dark:bg-wenge/20 p-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-azure-web">
+<span class="material-symbols-outlined text-wenge/80">ramen_dining</span>
+</div>
+<div>
+<p class="font-medium">Truffle Pasta</p>
+<p class="text-sm text-wenge/70">1 x $25.00</p>
+</div>
+</div>
+<p class="text-lg font-semibold">$25.00</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-azure-web">
+<span class="material-symbols-outlined text-wenge/80">local_bar</span>
+</div>
+<div>
+<p class="font-medium">Red Wine</p>
+<p class="text-sm text-wenge/70">2 x $12.00</p>
+</div>
+</div>
+<p class="text-lg font-semibold">$24.00</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-azure-web">
+<span class="material-symbols-outlined text-wenge/80">cake</span>
+</div>
+<div>
+<p class="font-medium">Cheesecake</p>
+<p class="text-sm text-wenge/70">1 x $9.50</p>
+</div>
+</div>
+<p class="text-lg font-semibold">$9.50</p>
+</div>
+<div class="border-t border-dashed border-azure-web"></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-sm text-wenge/70">
+<p>Subtotal</p>
+<p>$58.50</p>
+</div>
+<div class="flex items-center justify-between text-sm text-wenge/70">
+<p>Tax (8%)</p>
+<p>$4.68</p>
+</div>
+<div class="flex items-center justify-between text-sm font-medium text-wenge">
+<p>Tip (20%)</p>
+<p>$11.70</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-6">
+<h3 class="text-lg font-bold">How would you like to split?</h3>
+<div class="mt-2 grid grid-cols-3 gap-2 rounded-xl bg-white dark:bg-wenge/20 p-1">
+<button class="rounded-lg bg-columbia-blue py-3 text-sm font-bold shadow-sm">Equally</button>
+<button class="py-3 text-sm font-semibold text-wenge/70">By Items</button>
+<button class="py-3 text-sm font-semibold text-wenge/70">Custom</button>
+</div>
+</section>
+<section class="mt-6">
+<h3 class="text-lg font-bold">Participants</h3>
+<div class="mt-2 flex flex-wrap items-center gap-4 rounded-2xl bg-white dark:bg-wenge/20 p-4">
+<div class="flex -space-x-3">
+<img alt="Avatar of a participant" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIN9V6qEBcdtSULUs6xta7kSHzpYZGMtcVqrC8dpLlppwacoNAJdNbO1ZVeGaJYZxdRRb7rDcGQefqe3ZH5y8CeuYAwFlxZIV_XT6i4VGv8qmNxFwSEFa2JEYrYYDLW_NsmD5MgHRVwPAnXY4ZMC3c9McKS1XN8nduUPubzCxIwSj2u1qacs3sA45zZvybmbDXlSGcpN9LLuA_g9mrTutWrLwmcUWZGxahGhbeSmcgq9LWQJLn9uoFeWh6CXYFR5pb9NdbKGQ3kjo"/>
+<img alt="Avatar of another participant" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgkYMSP2JIG7PUC5-xm08eRnB2YZWwRMhnVH6SdpeOcXlIWP1GtB5epOl6kq7-TT21XYv3k1e9djZue2otCsgH1Wfb9IEoNz8M_lH_XtLXaNcA8hfNdeUgIheH4Kj6C9HJM46y0fED-IPJtkSsLcf4f1z57XWHg92XD_BdXekfDx4RvBel-Pcg_vmQ7U8VvzdYs6mOd_5OZP4ENT9K6y_rQoo-IkD4KLfs1nCRoj7E4ujf1qA2N_2hE5rScx3Dgh9gOkM5kyiF6Ec"/>
+<img alt="Avatar of a third participant" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPWHF8ZGRFBeyhCwfCCn8nccCYSYgTRsmAyS9kQpqNANDigRHU13pgPwttID6pf2wyn1mwtIDiqVSlI2a3XQOxxerGGVGBz8f1cwdMNeAhCkanU2ZvTYULXDA8BfsHX6l7iV1iwB8sMCmaL9q8reVzau5a9LgRdc7ZXyfh-ltKqr3WioJOz3vgtagKPYo5tGP9I_oIK56D9jWwTz63SEX56BUOA-TjYC8AB9hMsQiw7hq_nRNx-eeG0ox4nz7k1CKjaAuMZyd1yAI"/>
+</div>
+<div>
+<p class="font-medium">$41.50 / person</p>
+<p class="text-sm text-wenge/70">3 people</p>
+</div>
+<button class="ml-auto flex h-10 w-10 items-center justify-center rounded-full bg-thistle text-wenge">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="fixed bottom-0 left-0 w-full bg-background-light dark:bg-background-dark p-4">
+<div class="flex items-center gap-4">
+<button class="w-full rounded-xl bg-thistle/50 py-4 text-base font-bold text-wenge">Save as Draft</button>
+<button class="w-full rounded-xl bg-wenge py-4 text-base font-bold text-white shadow-lg">Proceed to Split</button>
+</div>
+</footer>
+</div>
+
+</body></html>

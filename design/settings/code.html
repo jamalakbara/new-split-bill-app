@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d87f2",
+                        "antiflash-white": "#F2F3F4",
+                        "wenge": "#5E5768",
+                        "columbia-blue": "#C4D7F2",
+                        "azure-web": "#D9EAF7",
+                        "thistle": "#D4C1EC",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white font-sans">
+<div class="flex min-h-screen flex-col">
+<header class="sticky top-0 z-10 flex h-16 items-center border-b border-gray-200 bg-antiflash-white px-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-wenge">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-grow text-center text-lg font-bold text-wenge pr-10">Settings</h1>
+</header>
+<main class="flex-1 space-y-6 bg-antiflash-white p-4 pb-8">
+<section>
+<h2 class="mb-2 text-sm font-semibold uppercase text-wenge/70">Account Settings</h2>
+<div class="divide-y divide-gray-200 rounded-lg bg-white shadow-sm">
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Profile Information</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<div class="flex items-center justify-between p-4">
+<span class="text-base text-wenge">Email Notifications</span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4">
+<span class="text-base text-wenge">Push Notifications</span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+</label>
+</div>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Privacy Settings</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="mb-2 text-sm font-semibold uppercase text-wenge/70">App Preferences</h2>
+<div class="divide-y divide-gray-200 rounded-lg bg-white shadow-sm">
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Currency</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-wenge/70">USD</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</div>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Language</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-wenge/70">English</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</div>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Default split method</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-wenge/70">Equally</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</div>
+</a>
+<div class="flex items-center justify-between p-4">
+<span class="text-base text-wenge">Auto-add service fee</span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+</label>
+</div>
+</div>
+</section>
+<section>
+<h2 class="mb-2 text-sm font-semibold uppercase text-wenge/70">Security</h2>
+<div class="divide-y divide-gray-200 rounded-lg bg-white shadow-sm">
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Change Password</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<div class="flex items-center justify-between p-4">
+<span class="text-base text-wenge">Two-Factor Authentication</span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+</label>
+</div>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Login History</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="mb-2 text-sm font-semibold uppercase text-wenge/70">Support</h2>
+<div class="divide-y divide-gray-200 rounded-lg bg-white shadow-sm">
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Help Center</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Contact Support</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">About</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Terms of Service</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base text-wenge">Privacy Policy</span>
+<span class="material-symbols-outlined text-wenge/50">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="mb-2 text-sm font-semibold uppercase text-wenge/70">Danger Zone</h2>
+<div class="rounded-lg bg-white shadow-sm">
+<a class="flex items-center justify-between p-4" href="#">
+<span class="text-base font-medium text-red-600">Delete Account</span>
+</a>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>

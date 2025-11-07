@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Group Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "columbia-blue": "#C9DAE7",
+                        "azure-web": "#DCE8F1",
+                        "antiflash-white": "#F1F4F8",
+                        "thistle": "#D1B6C5",
+                        "wenge": "#5C5765",
+                        "primary": "#3366FF"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white dark:bg-wenge font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden antialiased">
+<main class="flex-1 flex flex-col pb-24">
+<div class="flex items-center bg-azure-web/80 dark:bg-wenge/80 p-4 pb-3 justify-between sticky top-0 z-10 backdrop-blur-sm border-b border-columbia-blue dark:border-wenge/50">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-wenge/50">
+<span class="material-symbols-outlined text-wenge dark:text-antiflash-white">arrow_back_ios_new</span>
+</div>
+<h2 class="text-wenge dark:text-white text-xl font-bold leading-tight flex-1 text-center">Groups</h2>
+<div class="flex w-10 items-center justify-end">
+</div>
+</div>
+<div class="px-4 py-4">
+<button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg shadow-primary/30 min-w-0 gap-3">
+<span class="material-symbols-outlined">add</span>
+<span class="truncate">Create Group</span>
+</button>
+</div>
+<div class="flex flex-col gap-3 px-4">
+<div class="flex gap-4 bg-white dark:bg-wenge/50 rounded-lg p-3 justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="text-wenge dark:text-white flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-wenge dark:text-white text-base font-medium leading-normal">Weekend Trip</p>
+<p class="text-wenge/70 dark:text-gray-400 text-sm font-normal leading-normal">4 members</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-wenge/70 dark:text-gray-400 text-xs font-normal leading-normal">Active today</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-wenge/50 rounded-lg p-3 justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="text-wenge dark:text-white flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">home</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-wenge dark:text-white text-base font-medium leading-normal">Apartment Utilities</p>
+<p class="text-wenge/70 dark:text-gray-400 text-sm font-normal leading-normal">3 members</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-wenge/70 dark:text-gray-400 text-xs font-normal leading-normal">Active yesterday</p>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-wenge/50 rounded-lg p-3 justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="text-wenge dark:text-white flex items-center justify-center rounded-full bg-azure-web dark:bg-wenge/80 shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl">wine_bar</span>
+</div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-wenge dark:text-white text-base font-medium leading-normal">Dinner Club</p>
+<p class="text-wenge/70 dark:text-gray-400 text-sm font-normal leading-normal">6 members</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-wenge/70 dark:text-gray-400 text-xs font-normal leading-normal">Active 3 days ago</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-center p-8 mt-10 bg-white dark:bg-wenge/50 rounded-lg">
+<span class="material-symbols-outlined text-5xl text-gray-400 dark:text-gray-500 mb-4">group_add</span>
+<h3 class="text-lg font-bold text-wenge dark:text-white">No groups yet</h3>
+<p class="text-wenge/70 dark:text-gray-400 mt-1">Create your first group to start splitting bills with friends.</p>
+<button class="mt-6 flex cursor-pointer items-center justify-center rounded-full h-12 px-6 bg-primary/20 text-primary dark:bg-primary/30 dark:text-white text-base font-bold leading-normal tracking-wide">
+                    Create a Group
+                </button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

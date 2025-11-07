@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Help &amp; Support</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3B385D", // wenge
+            "columbia-blue": "#C9DAEA",
+            "azure-web": "#E3F2FD",
+            "antiflash-white": "#F1F1F1",
+            "thistle": "#D8BFD8",
+            "wenge": "#3B385D",
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+    }
+    body {
+      min-height: 100dvh;
+      background-color: #F1F1F1;}
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans antialiased bg-antiflash-white text-wenge">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<main class="flex-1 flex flex-col pb-8">
+<header class="flex items-center justify-between p-4 sticky top-0 z-10 bg-antiflash-white border-b border-gray-200">
+<div class="flex items-center justify-center size-10 bg-white rounded-full">
+<span class="material-symbols-outlined text-wenge">arrow_back</span>
+</div>
+<div class="flex w-10 shrink-0"></div>
+</header>
+<div class="px-4 py-2">
+<h1 class="text-3xl font-bold text-wenge">Help &amp; Support</h1>
+</div>
+<div class="flex flex-col gap-6 px-4 pt-4">
+<section class="bg-white rounded-lg p-4 flex flex-col gap-4">
+<h2 class="text-lg font-bold text-wenge">Quick Help</h2>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-10 pr-4 py-3 bg-antiflash-white border-none rounded-full focus:ring-2 focus:ring-thistle" placeholder="Search help articles..." type="text"/>
+</div>
+<div>
+<h3 class="font-semibold text-gray-600 mb-2">Popular Topics</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-azure-web text-wenge/80 text-sm font-medium px-3 py-1.5 rounded-full">Splitting Bills</span>
+<span class="bg-azure-web text-wenge/80 text-sm font-medium px-3 py-1.5 rounded-full">Adding Friends</span>
+<span class="bg-azure-web text-wenge/80 text-sm font-medium px-3 py-1.5 rounded-full">Group Expenses</span>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-lg p-4 flex flex-col gap-3">
+<h2 class="text-lg font-bold text-wenge">Frequently Asked Questions</h2>
+<div class="divide-y divide-gray-200">
+<div class="py-3">
+<p class="font-medium">How do I create a new group?</p>
+</div>
+<div class="py-3">
+<p class="font-medium">How can I settle a debt?</p>
+</div>
+<div class="py-3">
+<p class="font-medium">Is there a limit to the number of members in a group?</p>
+</div>
+<div class="py-3">
+<p class="font-medium">Can I export my expense data?</p>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-lg p-4 flex flex-col gap-4">
+<h2 class="text-lg font-bold text-wenge">Contact Support</h2>
+<button class="w-full flex items-center justify-center gap-2 py-3 px-4 bg-primary text-white font-bold rounded-full">
+<span class="material-symbols-outlined">chat</span>
+<span>Live Chat</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-3 px-4 bg-columbia-blue text-wenge font-bold rounded-full">
+<span class="material-symbols-outlined">email</span>
+<span>Email Support</span>
+</button>
+</section>
+<section class="bg-white rounded-lg p-4">
+<h2 class="text-lg font-bold text-wenge mb-3">Resources</h2>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 bg-antiflash-white rounded-full">
+<span class="material-symbols-outlined text-wenge">description</span>
+</div>
+<p class="font-medium flex-1">Terms of Service</p>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center size-10 bg-antiflash-white rounded-full">
+<span class="material-symbols-outlined text-wenge">privacy_tip</span>
+</div>
+<p class="font-medium flex-1">Privacy Policy</p>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>

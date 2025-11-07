@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create New Bill</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0d7ff2",
+            "background-light": "#f5f7f8",
+            "background-dark": "#101922",
+            "columbia-blue": "#C9DAE8",
+            "azure-web": "#D8E6F3",
+            "antiflash-white": "#F0F3F5",
+            "thistle": "#D6BAD6",
+            "wenge": "#5E5768",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-antiflash-white font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex items-center bg-antiflash-white p-4 justify-between sticky top-0 z-10 border-b border-gray-200">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-white text-wenge shadow-sm">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-wenge text-xl font-bold leading-tight">Create Bill</h1>
+<div class="w-10"></div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-4">
+<div class="flex flex-col gap-6">
+<h2 class="text-wenge text-2xl font-bold text-center">How would you like to add this bill?</h2>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+<div class="flex size-14 shrink-0 items-center justify-center rounded-xl bg-columbia-blue">
+<span class="material-symbols-outlined text-wenge text-3xl">photo_camera</span>
+</div>
+<div>
+<h3 class="font-bold text-wenge">Scan Receipt</h3>
+<p class="text-sm text-wenge/70">Use your camera to automatically capture bill details.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+<div class="flex size-14 shrink-0 items-center justify-center rounded-xl bg-thistle">
+<span class="material-symbols-outlined text-wenge text-3xl">receipt_long</span>
+</div>
+<div>
+<h3 class="font-bold text-wenge">Manual Entry</h3>
+<p class="text-sm text-wenge/70">Enter the bill details yourself for full control.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+<div class="flex size-14 shrink-0 items-center justify-center rounded-xl bg-azure-web">
+<span class="material-symbols-outlined text-wenge text-3xl">history</span>
+</div>
+<div>
+<h3 class="font-bold text-wenge">Duplicate Recent Bill</h3>
+<p class="text-sm text-wenge/70">Start with a copy of a bill you've added before.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-wenge text-xl font-bold mb-4">Recent Bills</h2>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between rounded-xl bg-white p-3 shadow-sm">
+<div class="flex items-center gap-3">
+<img alt="McDonalds logo" class="h-10 w-10 shrink-0 rounded-lg object-contain bg-gray-100 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvIevay23F5hCkmw3VL6zUCUZiyrpSJ6rB_YoUfC7GO4UhKOJEeKhe7cQIW0H_P2nbV_0FKeBmwXHF1bNKOvOBU44nLdo29nBMQiBvIxIqPVZYTYnzAFxWfPcHgP1RDT2ebR1SlxXgQIZX--wbS4DqleW5alTU6FSfdeYeF1eghNAR8lVqI1FLi5uINC5_Z_BoaI3CDv5lwug1FRE-yVT9dNWlxJjgo7wLLJDPWukk7p3qJPrGueLYsU-n7UWGxkNXpBX_sNs-kU"/>
+<div>
+<p class="font-semibold text-wenge">McDonalds</p>
+<p class="text-xs text-wenge/70">Yesterday</p>
+</div>
+</div>
+<p class="font-bold text-wenge">$10.00</p>
+</div>
+<div class="flex items-center justify-between rounded-xl bg-white p-3 shadow-sm">
+<div class="flex items-center gap-3">
+<img alt="KFC logo" class="h-10 w-10 shrink-0 rounded-lg object-contain bg-gray-100 p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCe_VKLOy453tEtE0DHyICjnQcx1mYogDevDWKV2HRRU8y9etMCcjggUiLWul1riKiVvWMeMWTlcK5aDUSl7a_K_1mTAJkQ_FlHNgDZosevdWO3TTKVhjgF8-B6pnFq0MXY4opiVsNtQCb9rdKt9-JrSS7Qxl6ib1v36tkyXAhBw23wuhidUzhXVxvMDEKkkI7J0Pzm3-wVwzRHX5v7wNHsJfbLpy8H46VdlCoRrEYVN4UaIze8LqxMO-oz3Z-8kMaitFvNx2dX0s"/>
+<div>
+<p class="font-semibold text-wenge">KFC</p>
+<p class="text-xs text-wenge/70">2 days ago</p>
+</div>
+</div>
+<p class="font-bold text-wenge">$23.50</p>
+</div>
+<div class="flex items-center justify-between rounded-xl bg-white p-3 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100">
+<span class="material-symbols-outlined text-wenge">movie</span>
+</div>
+<div>
+<p class="font-semibold text-wenge">Cinema Tickets</p>
+<p class="text-xs text-wenge/70">4 days ago</p>
+</div>
+</div>
+<p class="font-bold text-wenge">$35.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
